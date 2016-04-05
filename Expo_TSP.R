@@ -4,7 +4,7 @@ library(doParallel)
 registerDoParallel()
 
 # Load Data ----
-data = read.xls("/Users/zakrottier/Desktop/distances.xlsx", header=TRUE)
+data = read.csv("WI_TSP_Distances.csv", header=TRUE)
 
 # Transform Data ----
 rownames(data) = data$City
